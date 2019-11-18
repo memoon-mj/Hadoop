@@ -6,6 +6,7 @@ ratings = c.table('ratings')
 if(ratings.exists()):
     ratings.drop()
 ratings.create('rating')
+#with open("/home/maria_dev/data/ratings.csv","r") as f:
 
 batch = ratings.batch()
 if batch:
