@@ -1,6 +1,6 @@
 # 플레이스 추천 서비스 
-## SNS에서 등장 빈도수가 높은 키워드를 이용해 플레이스를 추천합니다. 
-## bigdataprogramming class 프로젝트
+### SNS에서 등장 빈도수가 높은 키워드를 이용해 플레이스를 추천합니다. 
+- bigdataprogramming class 프로젝트
 
 ## 사용 도구
 - Google Bigquery
