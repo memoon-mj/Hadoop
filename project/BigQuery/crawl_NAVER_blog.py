@@ -1,3 +1,6 @@
+#using NAVER search api
+#https://developers.naver.com/docs/search/blog/
+
 import requests
 from urllib.parse import urlparse
 
@@ -12,14 +15,13 @@ def get_api_result(keyword, display, start):
     return result.json()
 
 def make_list(keyword, page):
-    list1 = []
+    crawl_list = [] #BigQuery에 insert할 tuple 들어있는 list                                     
     json_obj = get_api_result(keyword,page,1)
-    count = json_obj['display']
-    for i in range(count):
-        title = json_obj["items"][i]["title"].replace("<b>","").replace("</b>","")
-        postdate = json_obj["items"][i]["postdate"]
-        row = (title, postdate,"1")
-        list1.append(row)
-    return list1
+    search_count = json_obj['display']  #검색된 blog 개수
+    for i in range(search_count):
+        title = json_obj["items"][i]["title"].replace("<b>","").replace("</b>","") #title에서 b태그 삭제
+        postdate = json_obj["items"][i]["postdate"]              
+        row = (title, postdate,"1")  #한 행
+        crawl_list.append(row) 
+    return crawl_list
 
-print(make_list("데이트",10))

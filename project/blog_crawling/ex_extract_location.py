@@ -1,8 +1,4 @@
-import ex_crawl
-loc_list =["홍대","부산","인천"]
-json_obj = ex_crawl.get_api_result("데이트",5,1)
-for i in range(5):
-    title =json_obj["items"][0]["title"]
-    #if loc_list in title: 
-        #print(title)
-    print(title)
+body = "{\"startDate\":\startDate,\"endDate\":\"2017-04-30\",\"timeUnit\":\"date\",\"keywordGroups\":[{\"groupName\":\"한글\",\"keywords\":[\"한글\",\"korean\"]},{\"groupName\":\"영어\",\"keywords\":[\"영어\",\"english\"]}],\"ages\":[\"2\",\"3\"],\"gender\":\"f\"}"
+print(body)
+for i in body: 
+    print(i)

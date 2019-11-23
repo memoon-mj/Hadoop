@@ -1,7 +1,6 @@
 import requests
 from urllib.parse import urlparse
-from konlpy.tag import Kkma
-from konlpy.utils import pprint
+
 
 client_id = "0YkwTXMasrJEfC7AEdwN"
 client_secret = "5CIrKH7eZe"
