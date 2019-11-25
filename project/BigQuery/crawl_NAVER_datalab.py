@@ -39,5 +39,3 @@ def make_list():
     return crawl_list
 
 print(make_list())
-
-
