@@ -21,8 +21,9 @@
     https://golmok.seoul.go.kr/source.do
         - (상권영역)
         - (상권-추정매출)_2019_1분기
-    (- 행정동 경계 데이터<통계청 통계지리정보서비스>
-    https://github.com/vuski/admdongkor) 
+        - 지리 정보, http://data.seoul.go.kr/dataList/datasetView.do?infId=OA-15560&srvType=S&serviceKind=1&currentPageNo=1
+
+
 
 ## 과정
 1. 분석 주제 선정, 기획

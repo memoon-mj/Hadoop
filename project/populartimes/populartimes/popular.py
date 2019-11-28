@@ -1,3 +1,3 @@
 import populartimes
 key = "AIzaSyCNDH_tLP9tlKKXkAcjRGUeikEB92bmc4A"
-print(populartimes.get(key, ["restaurant"], (37.562761, 126.925774), (37.562336, 126.926240)))
+print(populartimes.get(key, ["restaurant","bakery","cafe","food"], (37.55213181853304,126.9215177589102),(37.558268, 126.925723)))

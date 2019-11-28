@@ -13,7 +13,9 @@ def get_api_result():
     url = "https://openapi.naver.com/v1/datalab/search"
     #2017/1/1 ~2017/4/30까지 연남동, 홍대를 검색어로 하고 10대~30대가 모바일, PC환경에서 검색한 빈도의 월별 상대적 변화.
     #FROM DATALAB-그래프는 네이버에서 해당 검색어가 검색된 횟수를 기간별 각각 합산하여 조회기간 내 최다 검색량을 100으로 설정하여 상대적인 변화를 나타냅니다.
-    body = "{\"startDate\":\"2017-01-01\",\"endDate\":\"2017-04-30\",\"timeUnit\":\"month\",\"keywordGroups\":[{\"groupName\":\"연남동\",\"keywords\":[\"연남동 맛집\",\"연남동 데이트\"]},{\"groupName\":\"홍대입구\",\"keywords\":[\"홍대입구역\",\"홍대 맛집\"]}],\"ages\":[\"3\",\"4\",\"5\"]}"
+    #body = "{\"startDate\":\"2017-01-01\",\"endDate\":\"2017-04-30\",\"timeUnit\":\"month\",\"keywordGroups\":[{\"groupName\":\"샤로수길\",\"keywords\":[\"샤로수길 맛집\"]},{\"groupName\":\"연남동\",\"keywords\":[\"연남동 맛집\",\"연남동 데이트\"]},{\"groupName\":\"홍대입구\",\"keywords\":[\"홍대입구역\",\"홍대 맛집\"]},{\"groupName\":\"강남구청\",\"keywords\":[\"강남구청 맛집\"]},{\"groupName\":\"삼성역\",\"keywords\":[\"강남구청 맛집\"]},{\"groupName\":\"뱅뱅사거리\",\"keywords\":[\"뱅뱅사거리 맛집\"]}],\"ages\":[\"3\",\"4\",\"5\"]}"
+    body = "{\"startDate\":\"2017-01-01\",\"endDate\":\"2017-04-30\",\"timeUnit\":\"month\",\"keywordGroups\":[{\"groupName\":\"홍대입구\",\"keywords\":[\"홍대입구역\",\"홍대 맛집\"]},{\"groupName\":\"강남구청\",\"keywords\":[\"강남구청 맛집\"]},{\"groupName\":\"삼성역\",\"keywords\":[\"강남구청 맛집\"]},{\"groupName\":\"뱅뱅사거리\",\"keywords\":[\"뱅뱅사거리 맛집\"]}],\"ages\":[\"3\",\"4\",\"5\"]}"
+
     request = urllib.request.Request(url)
     request.add_header("X-Naver-Client-Id",client_id)
     request.add_header("X-Naver-Client-Secret",client_secret)
@@ -39,3 +41,4 @@ def make_list():
     return crawl_list
 
 print(make_list())
+
