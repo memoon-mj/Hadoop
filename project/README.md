@@ -1,5 +1,5 @@
 # 플레이스 추천 서비스 
-### SNS에서 등장 빈도수가 높은 키워드를 이용해 플레이스를 추천합니다. 
+### google map populartime data & naver blog 분석을 통해 플레이스를 추천합니다. 
 - bigdataprogramming class 프로젝트
 
 ## 사용 도구
@@ -12,9 +12,10 @@
 1. 크롤링 데이터
     - GoogleMap populartimes (Google place API 이용해 크롤링) 
     https://github.com/m-wrzr/populartimes
-    - Naver DataLab API, 통합 검색어 트렌드
-    https://developers.naver.com/docs/datalab/search/#%ED%86%B5%ED%95%A9-%EA%B2%80%EC%83%89%EC%96%B4-%ED%8A%B8%EB%A0%8C%EB%93%9C-api-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4
+    populartime 데이터는 구글 맵 이용자의 위치 정보를 활용합니다. 요일, 시간대 별로 얼마나 많은 사람들이 장소에 머물렀는지에 대한 정보를 제공합니다.
+    current & week populartime, timespent, 위도, 경도 데이터를 활용합니다.
 
+    - Naver search API, 블로그
 
 2. 공공데이터
     - 서울시 우리마을가게 상권분석 서비스

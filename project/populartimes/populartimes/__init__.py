@@ -14,7 +14,7 @@ ENTRY POINT
 """
 
 
-def get(api_key, types, p1, p2, n_threads=50, radius=1000, all_places=True):
+def get(api_key, types, p1, p2, n_threads=100, radius=1000, all_places=True):
     """
     :param api_key: str; api key from google places web service
     :param types: [str]; placetypes
