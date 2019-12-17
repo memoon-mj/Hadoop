@@ -1,11 +1,10 @@
-# 플레이스 추천 서비스 
-### google map populartime data & naver blog 분석을 통해 플레이스를 추천합니다. 
+# 인기가 많은 서울 안의 상권, 가게는 무엇일까?
+### google map populartime data & naver blog 크롤링 & 분석
 - bigdataprogramming class 프로젝트
 
 ## 사용 도구
-- Google Bigquery
-- Apache Airflow
-- Apache zeppelin
+-hadoop hdfs
+-zepellin
 - python
 
 ## 데이터
@@ -20,16 +19,3 @@
 2. 공공데이터
     - 서울시 우리마을가게 상권분석 서비스
     https://golmok.seoul.go.kr/source.do
-        - (상권영역)
-        - (상권-추정매출)_2019_1분기
-        - 지리 정보, http://data.seoul.go.kr/dataList/datasetView.do?infId=OA-15560&srvType=S&serviceKind=1&currentPageNo=1
-
-
-
-## 과정
-1. 분석 주제 선정, 기획
-2. 데이터 수집 계획
-3. 데이터 crawling
-4. scheduling
-5. airflow
-6. zeppelin
